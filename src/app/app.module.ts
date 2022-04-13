@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MatButtonModule } from '@angular/material/button';
+import { StorageComponent } from './pages/storage/storage.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MatButtonModule } from '@angular/material/button';
     HeaderComponent,
     FooterComponent,
     NavBarComponent,
+    StorageComponent,
   ],
   imports: [
     BrowserModule,
