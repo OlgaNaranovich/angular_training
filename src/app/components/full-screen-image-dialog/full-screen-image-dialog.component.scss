@@ -1,0 +1,9 @@
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+
+  .dialog-close-button {
+    cursor: pointer;
+    align-self: flex-end;
+  }
+}

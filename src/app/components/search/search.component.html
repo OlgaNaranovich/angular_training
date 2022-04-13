@@ -1,0 +1,16 @@
+<div>
+  <form class="search-form">
+    <mat-form-field class="search-input">
+      <mat-label>Find image</mat-label>
+      <input matInput name="text" [(ngModel)]="text" />
+    </mat-form-field>
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      (click)="searchPhoto()"
+    >
+      Search
+    </button>
+  </form>
+</div>
