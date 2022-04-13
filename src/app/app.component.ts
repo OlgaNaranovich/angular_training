@@ -7,15 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'photoStorage';
-  content = [
-    {
-      title: '',
-      image: '',
-      tags: ['', ''],
-    },
-  ];
-
-  getSome() {
-    return this.title ? 1 : 'y';
-  }
 }

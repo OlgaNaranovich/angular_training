@@ -1,0 +1,22 @@
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 10px 20px 10px 0;
+
+  .mat-card-image {
+    height: 240px;
+    width: 360px;
+    object-fit: cover;
+    cursor: zoom-in;
+
+    &:hover {
+      transition: opacity 0.5s;
+      opacity: 0.85;
+    }
+  }
+
+  .card-footer {
+    padding: 15px;
+  }
+}

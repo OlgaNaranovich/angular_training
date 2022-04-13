@@ -1,0 +1,11 @@
+<mat-card class="photo-card">
+  <mat-card-title>{{ card.title }}</mat-card-title>
+  <img [src]="card.img" mat-card-image (click)="openDialog()" alt="" />
+  <mat-card-footer>
+    <div class="card-footer">
+      <button mat-raised-button color="primary" (click)="addToStorage(card.id)">
+        Add to the storage
+      </button>
+    </div>
+  </mat-card-footer>
+</mat-card>
