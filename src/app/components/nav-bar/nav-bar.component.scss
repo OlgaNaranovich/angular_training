@@ -1,0 +1,18 @@
+@import 'src/app/utils/varables';
+
+.nav-bar {
+  width: 150px;
+  height: 100%;
+  border-right: 1px solid $gray-light;
+  box-shadow: 0 5px 5px $color-border;
+
+  .nav-button {
+    color: $color-disabled;
+    border: 1px solid $color-border;
+
+    &.active {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+}

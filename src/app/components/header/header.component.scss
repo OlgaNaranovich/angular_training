@@ -1,0 +1,20 @@
+@import 'src/app/utils/varables';
+
+.user-icon {
+  border: none;
+  background: transparent;
+  font-size: 50px;
+  color: $color-accent;
+  cursor: pointer;
+
+  &:hover {
+    transition: color 0.3s ease;
+    color: $color-accent-hover;
+  }
+}
+
+.user-profile-button {
+  .mat-icon {
+    transform: scale(2.2);
+  }
+}

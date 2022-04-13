@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "lint-style": "stylelint \"**/*.scss\" --custom-syntax postcss-scss",
     "lint-style-fix": "stylelint \"**/*.scss\"  --custom-syntax postcss-scss --fix",
-    "prettier": "prettier --write src/**/*.{html,ts,css}"
+    "prettier": "prettier --write src/**/*.{html,ts,scss}"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +24,9 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@fortawesome/angular-fontawesome": "^0.10.2",
+    "@fortawesome/fontawesome-svg-core": "~1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "postcss-scss": "^4.0.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
