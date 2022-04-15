@@ -120,6 +120,7 @@
   },
   "defaultProject": "photoStorage",
   "cli": {
+    "analytics": "66a6a401-e943-4900-b026-b3f1608e5e70",
     "defaultCollection": "@angular-eslint/schematics"
   }
 }
