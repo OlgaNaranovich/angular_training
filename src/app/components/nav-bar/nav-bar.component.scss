@@ -21,9 +21,13 @@
       vertical-align: middle;
     }
 
+    &:hover {
+      box-shadow: 0 2px 3px $color-border;
+      transition: box-shadow 0.3s ease;
+    }
+
     &.active {
-      color: $color-primary;
-      border-color: $color-primary;
+      border-color: $color-accent;
     }
   }
 }

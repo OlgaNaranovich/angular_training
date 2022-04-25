@@ -1,3 +1,5 @@
+@import 'src/app/utils/varables';
+
 .dialog-content {
   display: flex;
   flex-direction: column;
@@ -5,5 +7,16 @@
   .dialog-close-button {
     cursor: pointer;
     align-self: flex-end;
+  }
+}
+
+:host {
+  ::ng-deep {
+    .mat-icon {
+      color: $color-danger;
+      font-size: 30px;
+      width: 30px;
+      height: 30px;
+    }
   }
 }
