@@ -1,3 +1,5 @@
+@import 'src/app/utils/varables';
+
 .page-content {
   flex-grow: 1;
   display: flex;
@@ -9,4 +11,25 @@
 
 .footer {
   margin-top: auto;
+}
+
+::ng-deep {
+  .mat-icon,
+  .mat-icon-button {
+    color: $color-accent;
+
+    &:hover {
+      transition: all 0.3s ease;
+      color: rgba($color-accent, 0.8);
+    }
+  }
+
+  .mat-raised-button.mat-primary {
+    background: $color-accent;
+
+    &:hover {
+      transition: all 0.3s ease;
+      background: rgba($color-accent, 0.8);
+    }
+  }
 }
