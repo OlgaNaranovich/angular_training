@@ -4,6 +4,13 @@
   align-items: stretch;
   margin: 10px 20px 10px 0;
 
+  .mat-card-title {
+    overflow: hidden;
+    width: 328px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
   .mat-card-image {
     height: 240px;
     width: 360px;

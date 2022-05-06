@@ -28,6 +28,7 @@
     "@fortawesome/fontawesome-svg-core": "~1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "postcss-scss": "^4.0.3",
+    "qs": "^6.10.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

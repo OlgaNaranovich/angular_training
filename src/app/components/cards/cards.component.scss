@@ -1,4 +1,13 @@
+@import 'src/app/utils/varables';
+
 .cards {
   display: flex;
   flex-wrap: wrap;
+}
+
+.alert {
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
 }

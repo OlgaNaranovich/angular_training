@@ -23,6 +23,8 @@ import { CardComponent } from './components/cards/card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { FullScreenImageDialogComponent } from './components/full-screen-image-dialog/full-screen-image-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+import { PhotoService } from './services/photo/photo.service';
 
 @NgModule({
   declarations: [
@@ -51,8 +53,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatInputModule,
     MatCardModule,
     MatDialogModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [PhotoService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
