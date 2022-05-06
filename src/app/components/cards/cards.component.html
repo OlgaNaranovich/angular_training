@@ -1,5 +1,10 @@
 <div class="cards">
-  <ng-container *ngFor="let card of cardsList">
-    <app-card [card]="card"></app-card>
-  </ng-container>
+  <div *ngIf="noResultMessage; else cardsBlock" class="alert">
+    {{ noResultMessage }}
+  </div>
+  <ng-template #cardsBlock>
+    <ng-container *ngFor="let photo of searchResultPhoto">
+      <app-card [photo]="photo"></app-card>
+    </ng-container>
+  </ng-template>
 </div>

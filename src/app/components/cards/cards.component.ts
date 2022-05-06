@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Card, cards } from '../../utils/data';
+import { PhotoService } from '../../services/photo/photo.service';
+import { PhotoTypes } from '../../services/photo/photo.types';
 
 @Component({
   selector: 'app-cards',
@@ -7,9 +8,25 @@ import { Card, cards } from '../../utils/data';
   styleUrls: ['./cards.component.scss'],
 })
 export class CardsComponent implements OnInit {
-  cardsList!: Card[];
+  searchResultPhoto!: PhotoTypes[];
+  isSearchStarted: boolean = false;
+  noResultMessage!: string | null;
+
+  constructor(private photoService: PhotoService) {}
 
   ngOnInit() {
-    this.cardsList = cards;
+    this.photoService.searchStarted$.subscribe((value) => {
+      this.isSearchStarted = value;
+    });
+
+    this.photoService.searchResult$.subscribe((value) => {
+      if (!value.length && this.isSearchStarted) {
+        this.noResultMessage = 'Nothing found';
+      } else {
+        this.noResultMessage = null;
+      }
+
+      this.searchResultPhoto = value;
+    });
   }
 }
